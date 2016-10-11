@@ -67,10 +67,13 @@ if resp.status_code == 200:
 # now update a specific lead
 lead_data = {
     'emailAddress': 'some@email.address',
-    interested_item_field: interested_item_value
 }
+
+if interested_item_field:
+    lead_data[interested_item_field] = interested_item_value
+
 request.method('updateLeads') # we can reuse the same request instance
-request.param('objects', [leads_data,])
+request.param('objects', [lead_data,])
 
 resp = request.send()
 
