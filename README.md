@@ -8,6 +8,14 @@ SharpSpring API client for Python.
 * Python 2.7+
 * Requests
 
+## Installation
+
+```python
+python setup.py install
+```
+
+> pip/easy_install coming soon
+
 ## Quick Start
 
 Here is a simple example on how to grab all of the leads for your given account_id and secret.
