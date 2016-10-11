@@ -36,9 +36,14 @@ app_id = 'aaaaaaaaaa'
 postback_id = 'dddddddddddd'
 endpoint_id = 'eeeeee-rrrr-llll-0000-ffffffff'
 ss_tk_cookie = urllib.unquote(get_the_cookie_somehow())
+form_data = {
+    'first_name': 'mark',
+    'last_name': 'testing',
+    'email': 'mark@testing.test'
+}
 request = SharpSpringRequestForm(app_id=app_id, postback_id=postback_id,
         endpoint_id=endpoint_id, ss_tk_cookie=ss_tk_cookie)
-response = request.send_form(**form_data)
+response = request.send_form(form_data=form_data)
 
 print(response) # jsonp callback function
 ```
