@@ -1,0 +1,4 @@
+
+
+class SharpSpringException(Exception):
+    pass
