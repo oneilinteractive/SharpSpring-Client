@@ -9,7 +9,7 @@ install_requires = [
 ]
 
 # get the version information
-exec(open('sharpspring/version.py').read())
+exec(open('sharpspringclient/version.py').read())
 
 setup(
     name = 'gizmo',
