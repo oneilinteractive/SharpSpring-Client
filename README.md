@@ -21,7 +21,7 @@ python setup.py install
 Here is a simple example on how to grab all of the leads for your given account_id and secret.
 
 ```python
-from sharpsprinclient import SharpSpringRequest
+from sharpspringclient import SharpSpringRequest
 
 
 account_id = 'account-id'
